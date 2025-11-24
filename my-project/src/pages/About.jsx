@@ -7,21 +7,18 @@ const About = () => {
       organization: "Bahria Foundation College, Rawalpindi – Pakistan",
       duration: "2025 – Present",
       description: "Teaching IT subjects, conducting lab sessions, mentoring students in software projects.",
-      income: "₨55,000 approx."
     },
     {
       title: "MERN Stack Developer",
       organization: "OSSO.ai, Rawalpindi – Pakistan",
       duration: "2023 – 2024",
       description: "Developed web apps using React.js, Node.js, Express.js, MongoDB, Tailwind CSS. Worked on live projects like Binance Clone, Mercedes Maybach, and SkyTrack AI.",
-      income: "₨50,000 approx."
     },
     {
       title: "Lecturer (Computer Science)",
       organization: "Govt. Post Graduate College Viqar-un-Nisa, Rawalpindi – Pakistan",
       duration: "2021 – 2023",
       description: "Taught Computer Science subjects to BS and Intermediate students, prepared labs and assignments.",
-      income: "₨40,000 approx."
     }
   ];
 
@@ -82,7 +79,7 @@ const About = () => {
   return (
     <section className="bg-gray-50 dark:bg-gray-900 py-16 px-6 md:px-20 transition-colors duration-500">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-blue-500 mb-10 text-center dark:text-blue-400">About Me</h1>
+        <h1 className="mt-6 text-4xl font-bold text-blue-500 mb-10 text-center dark:text-blue-400">About Me</h1>
         
         {/* Personal Summary */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-10 transition-colors duration-500">
@@ -105,7 +102,6 @@ const About = () => {
             <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
               <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{exp.title}</h3>
               <p className="text-gray-600 dark:text-gray-300">{exp.organization}</p>
-              <p className="text-gray-500 dark:text-gray-400 text-sm">{exp.duration} | Income: {exp.income}</p>
               <p className="text-gray-700 dark:text-gray-300 mt-2">{exp.description}</p>
             </div>
           ))}

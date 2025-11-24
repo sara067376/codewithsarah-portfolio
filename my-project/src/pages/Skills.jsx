@@ -2,6 +2,15 @@ import React from "react";
 // Import your images for projects/UI, assuming they are in ../assets folder
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.jpg";
+import p3 from "../assets/p3.jpg";
+import p4 from "../assets/p4.jpg";
+import p5 from "../assets/p5.jpg";
+import p6 from "../assets/p6.jpg";
+import p7 from "../assets/p7.jpg";
+import p8 from "../assets/p8.jpg";
+import p9 from "../assets/p9.jpg";
+import p10 from "../assets/p10.jpg";
+import p11 from "../assets/p11.jpg";
 // ... continue importing up to p50
 
 const Skills = () => {
@@ -19,7 +28,7 @@ const Skills = () => {
     { name: "Machine Learning", level: 70 },
   ];
 
-  const projectImages = [p1, p2 /* , ... up to p50 */];
+  const projectImages = [p1, p2,, p3, p4, p5, p6, p7, p8, p9, p10, p11 /* , ... up to p50 */];
 
   return (
     <section className="mt-10 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 py-16 px-6 md:px-20 transition-colors duration-500">
