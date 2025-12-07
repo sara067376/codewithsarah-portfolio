@@ -1,7 +1,8 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import saraImg from "../assets/SARA!.jfif"; // <-- Your image here
+import saraImg from "../assets/SARA!.jfif";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
@@ -10,7 +11,8 @@ export default function Hero() {
       className="py-20 sm:py-28 flex justify-center px-4 md:px-0 bg-[#F7F7F7] dark:bg-[#1A1A1A]"
     >
       <div className="flex flex-col-reverse items-center gap-10 md:flex-row md:gap-16 max-w-[1100px]">
-        {/* LEFT — Text Section */}
+        
+        {/* LEFT — TEXT */}
         <div className="flex flex-col gap-6 text-center md:text-left">
           <p className="text-[#3B82F6] text-lg font-semibold tracking-wide">
             Hi, I’m
@@ -20,30 +22,42 @@ export default function Hero() {
             Sara Saleem
           </h1>
 
+          {/* 🔥 Typing Animation Here */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#717171] dark:text-[#E0E0E0]">
-            Software Engineer – MERN / Full Stack Developer
+            <Typewriter
+              options={{
+                strings: [
+                  "Software Engineer",
+                  "MERN Stack Developer",
+                  "Full Stack Developer",
+                  "AI & ML Enthusiast",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 60,
+                deleteSpeed: 40,
+              }}
+            />
           </h2>
 
           <p className="mt-4 max-w-xl text-[#444444] dark:text-[#d4d4d4] text-base sm:text-lg leading-relaxed">
             A passionate Software Engineer with strong foundations in
-            programming, MERN Stack development, and modern web technologies. I
-            create responsive, user-centered and high-quality digital solutions.
+            programming, MERN Stack development, and modern web technologies.
+            I create responsive, user-focused, and high-quality digital products.
           </p>
 
-          {/* Contact Info */}
+          {/* Contact — NO PHONE NUMBER FOR SECURITY */}
           <div className="mt-4 text-sm sm:text-base text-[#555555] dark:text-slate-300 space-y-1">
             <p>
               <strong>Email:</strong> sara2004saleem@gmail.com
             </p>
-            <p>
-              <strong>Phone:</strong> +92 311 5082244
-            </p>
+
             <p>
               <strong>Location:</strong> Rawalpindi, Pakistan
             </p>
           </div>
 
-          {/* Buttons */}
+          {/* BUTTONS */}
           <div className="flex gap-3 justify-center md:justify-start mt-6">
             <a
               href="/Sara_Saleem_CV.pdf"
@@ -63,16 +77,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT — Profile Image */}
+        {/* RIGHT — IMAGE */}
         <div
           className="
-    w-64 h-64
-    sm:w-80 sm:h-80
-    rounded-full 
-    shadow-[0_10px_25px_rgba(0,0,0,0.15)]
-    border-4 border-[#3B82F6]
-    ring-4 ring-[#3B82F633]
-  "
+            w-64 h-64
+            sm:w-80 sm:h-80
+            rounded-full 
+            shadow-[0_10px_25px_rgba(0,0,0,0.15)]
+            border-4 border-[#3B82F6]
+            ring-4 ring-[#3B82F633]
+          "
           style={{
             backgroundImage: `url(${saraImg})`,
             backgroundSize: "cover",

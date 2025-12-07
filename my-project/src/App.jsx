@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Projects from "./components/Projects";
 import Contact from "./pages/Contact";
@@ -30,6 +31,7 @@ function App() {
       </Routes>
 
       {/* Your routes and pages */}
+      <Footer theme={theme} setTheme={setTheme}/>
     </>
   );
 }
