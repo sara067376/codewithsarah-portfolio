@@ -29,7 +29,7 @@ const Contact = () => {
                 href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 text-lg hover:underline z-10 relative"
+                className="text-xs sm:text-lg text-blue-600  hover:underline z-10 relative"
               >
                 {email}
               </a>
@@ -47,7 +47,7 @@ const Contact = () => {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:underline"
+                className="text-xs sm:text-lg text-gray-700 dark:text-gray-300 hover:underline"
               >
                 {github}
               </a>
@@ -65,7 +65,7 @@ const Contact = () => {
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-xs sm:text-lg text-blue-600 hover:underline"
               >
                 {linkedin}
               </a>
